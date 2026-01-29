@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatkara Connect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <img src="{% static 'app\image\chatkaraconnect_logo.svg' %}" alt="Chatkara">
+    <span>Chatkara Connect</span>
+  </div>
+
+  <nav>
+    <a href="#">Browse Caterers</a>
+  </nav>
+
+  <a href="#" class="btn-primary small">Login / Sign Up</a>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>
+    Find the Perfect
+    <span class="gradient-text">Caterer</span><br>
+    for Your Event
+  </h1>
+
+  <p>
+    Connect with trusted local caterers and food vendors.
+    Book online, chat in real-time, and make your event delicious!
+  </p>
+
+  <!-- Search Box -->
+  <div class="search-box">
+
+    <div class="field">
+      <img src="{% static 'app/images/chatkaraconnect_location.svg' %}">
+      <select>
+        <option>Select Location</option>
+        <option>Indore</option>
+        <option>Bhopal</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <img src="{% static 'app/images/calendar.svg' %}">
+      <select>
+        <option>Event Type</option>
+        <option>Wedding</option>
+        <option>Birthday</option>
+        <option>Corporate</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <img src="{% static 'app/images/rupee.svg' %}">
+      <input type="text" placeholder="Budget (₹)">
+    </div>
+
+    <button class="btn-primary">
+      🔍 Search Caterers
+    </button>
+
+  </div>
+</section>
+
+</body>
+</html>
